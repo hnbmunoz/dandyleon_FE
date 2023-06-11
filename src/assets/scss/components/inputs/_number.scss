@@ -1,0 +1,110 @@
+.numbers-container {
+  width:30rem;
+  min-width: 5rem;
+  width: 100%;
+}
+
+.numbers-input-container{
+  position:relative; 
+  width:100%;  
+  text-align:center;  
+  background-color: transparent;
+  margin-left: 0;
+  margin-top: 0.5rem;
+  margin-bottom:0.5rem;
+  border-color: #808080;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.63rem;
+  display: flex;
+  &__textbox {   
+    // width: 93%;
+    background-color: transparent;
+    border:none;
+    color: inherit;
+    padding: 0.5rem;
+    padding-top: 0.7rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    width: 82%;
+    &:focus  {
+      outline: none;       
+      //  ~{        
+      //     .floating-placeholder {                 
+      //       color: orange;
+      //       font-size: 0.55rem;
+      //       transform: translateY(-1.5rem);
+      //     }
+      //  }
+    }
+    
+    &:not(:placeholder-shown) + .input-placeholder {
+      font-size: 0.55rem;
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  .input-placeholder {
+    position: absolute;;    
+    font-size: 0.625rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    left: 0;  
+    top: 0;
+    pointer-events: none;
+    transition: all 0.7s;
+    font-size: 1.25rem;
+  }
+
+  .placeholder-icons-container {    
+    margin-top: 0.7rem;
+    right: 0;  
+    top: 0;  
+    margin-right: 0.3rem;     
+    cursor: pointer;
+    font-size: 1.2rem;       
+    position: absolute;  
+         
+    .placeholder-button {
+      background-color: inherit; 
+      border: none;
+      color: #5e2552; 
+      transition: all 0.3s;
+      &:hover {
+        color: #fff ;
+        cursor: pointer;
+        transform: scale(1.5);        
+        color: #fff;       
+      }      
+      &:active {
+        cursor: pointer;
+        transform: scale(1);        
+        color: #5e2552;    
+      }
+    }
+  }
+}
+
+
+// .drop-down-item-container {
+//   border-radius: 0.5rem;
+//   padding: 0.5rem 0;
+//   width: 30rem;
+//   min-width: 20%;
+//   background-color: #fff;
+//   position: absolute;
+//   color: #1f1f1f;  
+//   z-index: 2;
+//   font-family: 'Montserrat', sans-serif;
+//   font-size: 1rem;
+//   text-align: left;
+//   width: 90%;
+// }
+// .drop-down-item {
+//   &:hover {
+//     cursor: pointer;
+//     background-color: #384a66;
+//     color: #fff;
+//   }
+// }

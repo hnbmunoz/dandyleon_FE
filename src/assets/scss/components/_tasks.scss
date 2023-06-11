@@ -1,0 +1,20 @@
+.create-task-btn {
+  align-items: center;
+  font-family: "Montserrat";
+  cursor: pointer;
+  background-color: #fabd9f;
+  color: #1f1f1f;
+  width: fit-content;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 2rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.create-task-btn:hover {
+  color: #fff;
+  background-color: #ff935e;
+}

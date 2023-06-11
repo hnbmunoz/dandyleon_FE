@@ -1,0 +1,39 @@
+@forward 'popup';
+
+.transparent-modal {
+  border-radius: 0.5rem;
+  display:flex;
+  flex-direction: column;
+  min-height: 30rem;
+  // max-height: 40rem;
+  height:30rem;
+  min-width: 50rem;
+  padding: 1.5rem;
+  // width: fit-content;
+  height: fit-content;
+  // background-color: #ccc;
+  background-color: transparent;
+  position:absolute;
+  // top: 15%;
+  // box-shadow: 0.31rem 0.31rem 0.93rem -0.06rem rgba(0,0,0,0.75);
+  font-family: 'Montserrat';
+  align-items: center;
+  animation: fadein 0.5s ;
+  z-index: 10;
+  width: 100%
+}
+
+.fade-out {
+  animation: fadeout 0.5s ;
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 15%; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {top: 15%; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+

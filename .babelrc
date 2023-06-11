@@ -1,0 +1,30 @@
+{
+  "presets": ["@babel/preset-typescript"],
+  "plugins": [
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal" : "minimal"}]
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        [
+          "@babel/env",{
+            "useBuiltIns": "usage",
+            "corejs": {
+              "version": 3,
+              "proposal": true
+            },
+            "debug": true
+          }
+        ]
+      ]    
+    },
+    "development": {
+      "presets": [
+        ["@babel/env"]
+      ],
+      "plugins": [
+        "@emotion"
+      ]
+    }    
+  } 
+}

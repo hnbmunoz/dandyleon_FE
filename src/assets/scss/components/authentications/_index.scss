@@ -1,0 +1,96 @@
+@forward 'auth-container';
+
+.authentication-modal {
+  border-radius: 0.5rem;
+  display:flex;
+  flex-direction: column;
+  max-height: 31rem;
+  min-width: 20rem;
+  padding: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  position:relative;
+  box-shadow: 0.31rem 0.31rem 0.93rem -0.06rem rgba(0,0,0,0.75);
+  font-family: 'Montserrat';
+  transition: top .2s;
+  animation: animShow .5s forwards;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  display:flex;
+  background-color: transparent;  
+}
+
+.auth-input {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.auth-header {
+  font-size: 1.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-btn {
+  
+  background-color: #ff7d00;
+  padding: 0.5rem;
+  color: #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.auth-btn:hover {
+  background-color: #ffc185;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-toggle {
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .toggle-link {
+    color: #1f1f1f;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .toggle-link:hover {
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.auth-login {
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  color:#1f1f1f;
+
+  &:hover {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #000
+  }
+}
+
+
+

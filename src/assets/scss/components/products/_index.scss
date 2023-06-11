@@ -1,0 +1,20 @@
+.product-items {
+  // background-color: aliceblue;
+  border-radius: 0.23rem;
+  border-color: #808080;
+  min-height: 20rem;
+  min-width: 10rem;
+   margin: 2rem 0;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+
+  img {
+    border-radius: 3rem;
+    max-height: 20rem;
+    max-width: 10rem;
+    padding: 1rem;
+  }
+}

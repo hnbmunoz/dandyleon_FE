@@ -1,0 +1,37 @@
+
+.disabled-text {
+  color: #555 !important;
+}
+
+.disabled {
+  color: #555 !important;
+  background-color: #878787 !important ;
+}
+
+.disabled-button {
+  background-color: #878787 !important ;
+  color: #555555 !important;
+  cursor: text !important;
+  border: none !important;
+  filter: drop-shadow(2px 4px 6px black) !important;
+}
+
+.disabled-button:hover {
+  background-color: #878787 !important ;
+  cursor: text !important;
+  transform: scale(1) !important; 
+  border: none !important;
+  color: #555555 !important;
+  filter: drop-shadow(2px 4px 6px black) !important;
+  box-shadow: none !important;
+}
+
+.disabled-button:active {
+  background-color: #878787 !important ;
+  cursor: text !important;
+  transform: scale(1) !important; 
+  border: none !important;
+  color: #555555 !important;
+  filter: drop-shadow(2px 4px 6px black) !important;
+  box-shadow: none !important;
+}
