@@ -1,0 +1,82 @@
+.side-panel {
+  background-color: #7fa0ac;
+  color: #1f1f1f;
+  height: 100vh;
+  position:absolute;
+  left: 0;
+  width: 15%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vh;
+}
+
+.panel-input {
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-size: 0.8rem;
+  font-family: 'PT Sans' !important;
+  padding: 0.5rem;
+  border: none;
+}
+.panel-input:active {
+ outline:none
+}
+.panel-input:focus {
+  outline:none
+ }
+
+ .panel-display {
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-size: 0.8rem;
+  margin: 1rem 0;  
+  height: 55%;  
+  overflow-y: scroll;  
+ }
+
+ .panel-display::-webkit-scrollbar { width: 0 !important }
+
+ .panel-items {
+  padding: 0.2rem 0.5rem;
+  color: #1f1f1f;
+  font-family: 'Montserrat' !important;
+  font-size: 1rem;
+  transition: 0.3s;
+ }
+
+ .panel-items:hover {
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  background-color: #384a66	;
+  font-size: 1rem;
+  cursor: pointer;
+  
+ }
+
+ .panel-link {
+  font-size: 0.75rem;
+  color: #fff;
+  font-family: 'Montserrat';  
+  cursor: pointer;
+ }
+
+ .panel-link:hover {
+  font-weight: bold;
+ }
+
+ .active-panel-item {
+  color: #fff;
+  background-color: #384a66	;
+  font-size: 1rem;
+  cursor: pointer;
+ }
+
+ .checkbox-item {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-evenly;
+  font-family: 'Montserrat';
+  color: #1f1f1f;
+  margin-bottom: 2rem;
+ }

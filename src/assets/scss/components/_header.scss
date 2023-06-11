@@ -1,0 +1,132 @@
+
+ .header-logo {
+  // padding: 0.25rem;
+  // position: fixed ;
+  // top: 0;
+  // left: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+ }
+
+.header-container {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  padding: 1.5rem 2.5rem;  
+  font-size: 1.25rem;
+  align-items: center;
+  height: fit-content;  
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  justify-content: space-around;
+  background-color: #ddd;
+}
+
+
+// .header-account-btn {  
+//   padding: 0.5rem;
+//   background-color: transparent;
+//   font-family: 'Montserrat';
+//   font-size: 1rem;  
+//   color: #fff;
+//   border: none;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .header-modal{   
+//   border-radius: 0.25rem;
+//   background-color: #7fa0ac;
+//   color: #1f1f1f;
+//   padding: 1rem;
+//   width: 20rem;
+//   position:absolute;
+//   right: 0;
+//   top: -0.5rem;  
+//   font-family: 'Montserrat';
+// }
+
+// .header-modal-items {
+//   background-color: transparent;
+//   font-family: 'Montserrat';
+//   border: none;
+// }
+
+// .header-modal-items:hover {
+//   cursor: pointer;  
+//   color: #fff;
+// }
+
+// .popUp-modal {
+//   border-radius: 2rem;
+//   padding: 2rem 1rem;
+//   height: fit-content;
+//   width: fit-content;
+//   min-height: 15rem;
+  
+//   background-color: #ccc;
+//   color: #1f1f1f;
+//   filter: drop-shadow(2px 4px 6px black);
+//   font-family: 'Montserrat';
+//   font-size: 1.5rem;
+//   text-align: center;  
+//   display: flex;
+//   transition: 0.3s all;
+//   align-items: center; 
+//   z-index: 9999  ; 
+// }
+
+// .close-modal-btn {
+//   background-color: transparent;
+//   border: none;
+//   position: absolute;
+//   top: 0;
+//   padding: 1rem;
+//   right: 0;
+//   font-size: 1rem;
+//   cursor: pointer;
+//   transition: 0.3s;
+// }
+
+// .close-modal-btn:hover {
+//   color: #5e2552;
+// }
+ 
+// .modal-input {
+//   font-family: 'Roboto Mono';
+//   background-color: transparent;
+//   border: none;
+//   border-bottom: 1px solid #000;
+//   font-size: 1rem;
+//   margin: 1rem 0;
+// }
+
+// .modal-input:focus {
+//   outline: none !important;
+// }
+
+// .modal-submit {
+//   border-radius: 3rem;
+//   background-color: #7fa0ac;
+//   height: 3rem;
+//   width: fit-content;
+//   cursor: pointer;
+//   transition: 0.3s;
+//   font-weight: bold;
+//   border: none;
+//   color: #1f1f1f;
+//   font-family: 'Montserrat';
+//   padding: 1rem;
+//   font-size: 0.75rem;
+// }
+
+// .modal-submit:hover {
+//   color: #fff;
+//   background-color: #384a66;  
+// }
+ 
+ 

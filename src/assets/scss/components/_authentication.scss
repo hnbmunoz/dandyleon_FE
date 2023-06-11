@@ -1,0 +1,138 @@
+
+
+// .eye-button {
+//   border: none;
+//   cursor: pointer;
+//   background-color: transparent;
+//   transition: 0.3s ease;
+// }
+
+// .eye-button:hover {
+//   transform: scale(1.5);  
+// }
+
+// .eye-button:active {
+//   transform: scale(1); 
+// }
+
+
+
+// .authentication-modal {
+//   border-radius: 0.5rem;
+//   display:flex;
+//   flex-direction: column;
+//   max-height: 31rem;
+//   min-width: 20rem;
+//   padding: 1.5rem;
+//   width: fit-content;
+//   height: fit-content;
+//   background-color: transparent;
+//   position:relative;
+//   box-shadow: 0.31rem 0.31rem 0.93rem -0.06rem rgba(0,0,0,0.75);
+//   font-family: 'Montserrat';
+//   transition: top .2s;
+//   animation: animShow .5s forwards;
+// }
+
+// .authentication-modal:after {
+//   position: absolute;
+//   content: "";
+//   right: -0.62rem;
+//   bottom: 1.13rem;
+//   width: 0;
+//   height: 0;
+//   border-left: 0px solid transparent;
+//   border-right: 0.63rem solid transparent;
+//   border-bottom: 0.63rem solid #1a044e;
+// }
+
+// .auth-form {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+
+
+// /* From uiverse.io by @alexruix */
+// .auth-input {
+//   line-height: 1.75rem;
+//   border: 0.12rem solid transparent;
+//   border-bottom-color: #777;
+//   padding: .2rem 0;
+//   margin: 1rem 0;
+//   outline: none;
+//   background-color: transparent;
+//   color: #0d0c22;
+//   transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+//   width: 90%;
+//   box-sizing: border-box;
+//  }
+ 
+//  .auth-input:focus, .auth-input:hover {
+//   outline: none;
+//   padding: .2rem 1rem;
+//   border-radius: 1rem;
+//   border-color: #7a9cc6;
+//  }
+ 
+//  .auth-input::placeholder {
+//   color: #777;  
+//  }
+ 
+//  .auth-input:focus::placeholder {
+//   opacity: 0;
+//   transition: opacity .3s;
+//  }
+ 
+//  .auth-btn {
+//   position: absolute;
+//   border-radius: 1.9rem;
+//   border-bottom-right-radius: 0;
+//   border-top-right-radius: 0;
+//   background-color: #0f0092;
+//   border-width: thin;
+//   color: #FFF;
+//   padding: 0.75rem 1.56rem;
+//   display: inline-block;
+//   font-size: 0.75rem;
+//   font-weight: bold;
+//   letter-spacing: 0.31rem;
+//   right: -0.63rem;
+//   bottom: -1.38rem;
+//   cursor: pointer;
+//   transition: all .25s ease;
+//   box-shadow: -0.31rem 0.37rem 1.25rem 0px rgba(26, 26, 26, 0.4);
+// }
+
+// .auth-btn:hover {
+//   background-color: #07013d;
+//   box-shadow: -0.31rem  0.37rem 1.25rem 0px rgba(88, 88, 88, 0.569);
+// }
+
+// .auth-state {
+//   border:none;
+//   background-color: transparent;
+//   margin-top: 2rem;
+//   font-family: 'Montserrat';
+// }
+// .auth-state:hover {
+//   color: #0f0092;    
+//   cursor: pointer;
+// }
+ 
+// .auth-warning {
+//   background-color: #c5d772;
+//   color: #1f1f1f;  
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   bottom: 0;
+//   height: fit-content;
+//   border-radius: 0.5rem;  
+//   transition: 0.4s ease-in;
+//   font-size: 1rem;
+//   width: fit-content;
+//   padding: 0.5rem;
+//   border-radius: 0.5rem;
+
+// }

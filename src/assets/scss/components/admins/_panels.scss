@@ -1,0 +1,120 @@
+
+.section-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  // position: absolute;
+}
+
+.section-item {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  transition: all 0.5s;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-position: center;  
+  background-size: cover;
+  background-color: transparent;
+  color: #fff;
+  color: #1f1f1f
+}
+
+.hide-panel{
+  height: 0 !important;
+  opacity: 0 !important;
+  box-shadow: none !important;
+}
+
+.config-panel {  
+  margin: 3rem;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+
+.config-header {
+  font-size: 2rem;  
+  padding: 1rem 0;
+}
+
+.config-body {
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.config-table{
+  .col-width1 {
+    width: 5rem;
+    // min-width: 10rem;
+  }
+
+  .col-width2 {
+    width: 15rem;
+  }
+
+  .col-width3 {
+    width: 20rem;
+    // background-color: red;
+  }
+  .table-header {
+    font-size: 1.5rem;    
+    display: flex;
+
+    .header-elements {
+      padding: 0.5rem 1.5rem;
+    }
+  }
+
+  .table-body {
+    max-height: 40vh;
+    overflow-y: scroll;
+  
+    &::-webkit-scrollbar { width: 0 !important }
+    .table-row {
+      padding: 0.25rem 0px;
+      display: flex;
+    }
+    
+    .table-elements {
+      padding: 0.5rem 1.5rem;
+    }
+
+    .table-btn-details {
+      padding: 0.5rem 1rem;
+      border-radius: 0.6rem;
+      background-color: #7959f9;
+      color: #ccc;
+      transition: all 0.5s;
+      font-size: 1rem;
+
+      &:hover {
+        color: #fff;
+        background-color: #19058c;
+      }
+    }
+  }
+
+  .table-footer {
+    width: 100%;
+    margin: 2rem 0;
+
+    .new-btn {
+      padding: 1rem;
+      border-radius: 0.6rem;
+      font-size: 1.25rem;
+      background-color: #90EE90;
+      color: #1f1f1f;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #023020;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
