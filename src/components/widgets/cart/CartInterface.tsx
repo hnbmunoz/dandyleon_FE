@@ -33,6 +33,7 @@ const CartInterface = () => {
   
   const RecordTransaction  = async () => {
     if (profile.display === "" || _.isEmpty(profile)) return
+    if (netPrice <= 0 ) return
     await showLoading();
     await axios({
       method: "post",
@@ -70,17 +71,28 @@ const CartInterface = () => {
   }
 
   return (
-    <div className="cart-panel" style={{ width: `${myCart ? "20%" : "0"}`, fontSize: `${myCart ? "1rem" : "0 "}`}}>
+    <div className="cart-panel" style={{ width: `${myCart ? "30%" : "0"}`, fontSize: `${myCart ? "1rem" : "0 "}`}}>
       <div className='cart-header'>
         My Cart
-        <div style={{padding: "0 0.5rem"}}>
+        <div style={{paddingRight: "1rem"}}>
           <ClearButton buttonClick={closeCart}/>
         </div>
       </div>
       <div className='cart-body flex-column'>
+        <div style={{display: 'flex', justifyContent: 'space-evenly', marginBottom: '1rem', fontWeight: 'bold'}}>
+          <div>
+            Product Name
+          </div>
+          <div>
+            Quantity
+          </div>
+          <div>
+            Price
+          </div>
+        </div>
         {cartItems.map((item, idx) => {
           return (
-            <div>
+            <>
               <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
                 <div>
                   {item.product_name}
@@ -95,18 +107,18 @@ const CartInterface = () => {
                   <BsFillTrashFill />
                 </div>
               </div>
-            </div>
+            </>
           )
         })}
         <div className='flex-row' style={{padding: "1rem"}}>
           <div style={{paddingRight: '0.5rem'}}>Total : </div>
           <div>{dollarUSLocale.format(netPrice)}</div>
         </div>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem'}}>
-          <button style={{fontSize: 'inherit', backgroundColor: 'olive'}} onClick={RecordTransaction}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '1rem'}}>
+          <button className='buy-button' style={{fontSize: 'inherit'}} onClick={RecordTransaction}>
             Purchase
           </button>
-          <button style={{fontSize: 'inherit', backgroundColor: 'pink'}} onClick={clearCart}>
+          <button style={{fontSize: 'inherit'}} className='clear-cart-button' onClick={clearCart}>
             Clear Cart
           </button>
         </div>

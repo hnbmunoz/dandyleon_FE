@@ -46,7 +46,13 @@ const Navigation = () => {
   }
 
   return (
-    <div className="flex-row" style={{ alignItems: "center"}}>
+    <div className="flex-row" 
+      style={{ 
+        alignItems: "center",
+        position: 'absolute',
+        right: '0'
+      }}
+    >
       <CartButton />
       {/* <div style={{ padding: "0 0.25rem" }}> | </div>      */}
       <div style={{ padding: "0 0.25rem" }}> | </div>
@@ -55,7 +61,10 @@ const Navigation = () => {
           Login
         </div>
       ) : (
-        <div className="auth-login" onClick={handleSingout}>{profile.display}</div>
+        <div className=" auth-login flex-row">
+          <div>{profile.display}</div> |
+          <div className="auth-login" onClick={handleSingout}>Log Out</div>
+        </div>
       )}
     </div>
   );

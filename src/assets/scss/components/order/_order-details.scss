@@ -1,15 +1,15 @@
 .order-page {
-  padding: 1rem;
-  display: flex;
+  padding: 3rem;
+  // display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   // overflow-y: scroll;
-  height: 100vh;
+  // height: 100vh;
 
   img {
     // min-width: 30rem;
     // min-height: 15rem;
-    width: 25rem;
+    width: 18rem;
     height:30rem;
     padding: 0 2rem;
     border-radius: 5rem;
@@ -42,4 +42,131 @@
     color: #1f1f1f;
     margin: 1rem;
   }
+}
+
+.order-btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.addToCart {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+
+.addToCart::before,
+.addToCart::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .15s ease;
+}
+
+.addToCart::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.addToCart::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.addToCart:active,
+.addToCart:focus {
+  outline: none;
+}
+
+.addToCart:active::before,
+.addToCart:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.addToCart:active::before {
+  top: 3px;
+}
+
+.addToCart:active::after {
+  bottom: 3px;
+}
+
+
+.addToCart_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.addToCart_lg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.addToCart_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.addToCart_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -0.06rem;
+  left: -0.5rem;
+  width: 0;
+  background-color: #ff7d00;
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.addToCart_text {
+  position: relative;
+}
+
+.addToCart:hover {
+  color: #0f1923;
+}
+
+.addToCart:hover .addToCart_sl {
+  width: calc(100% + 0.9rem);
+}
+
+.addToCart:hover .addToCart_lg::after {
+  background-color: #fff;
 }

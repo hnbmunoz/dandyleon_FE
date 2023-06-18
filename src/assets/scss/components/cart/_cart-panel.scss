@@ -55,3 +55,81 @@
   display: flex;
   justify-content: space-between;
 }
+
+.buy-button {
+  height: 2.8rem;
+//  width: 9rem;
+  width: 80%;
+  border-radius: 0.23rem;
+  background: transparent;
+ -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+ border: 0.13rem solid #ff7d00;
+ outline: none;
+ color: #c16004;
+ font-size: 1rem;
+}
+
+
+.buy-button:hover {
+  background: #ff7b00;
+  color: #ffffff;
+  border: 0.13rem solid #ff7d00;
+  animation: squeeze3124 0.9s both;
+ }
+ 
+ @keyframes squeeze3124 {
+  0% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1);
+  }
+ 
+  30% {
+   -webkit-transform: scale3d(1.25, 0.75, 1);
+   transform: scale3d(1.25, 0.75, 1);
+  }
+ 
+  40% {
+   -webkit-transform: scale3d(0.75, 1.25, 1);
+   transform: scale3d(0.75, 1.25, 1);
+  }
+ 
+  50% {
+   -webkit-transform: scale3d(1.15, 0.85, 1);
+   transform: scale3d(1.15, 0.85, 1);
+  }
+ 
+  65% {
+   -webkit-transform: scale3d(0.95, 1.05, 1);
+   transform: scale3d(0.95, 1.05, 1);
+  }
+ 
+  75% {
+   -webkit-transform: scale3d(1.05, 0.95, 1);
+   transform: scale3d(1.05, 0.95, 1);
+  }
+ 
+  100% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1);
+  }
+ }
+
+ .clear-cart-button {
+  // position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  font-family: 'Roboto Mono';
+  background-color: #ff6363;
+  color: #ccc;
+  margin: 2rem 2rem;
+  z-index: 8;
+  // position: fixed;
+  &:hover {
+    animation: pulse-red 1s forwards;
+    color: #fff;
+    font-weight: bold;
+  }
+ }

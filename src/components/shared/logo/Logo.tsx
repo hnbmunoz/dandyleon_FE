@@ -2,7 +2,12 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <div>dandyleon</div>
+    <div
+      style={{
+        position: 'absolute',
+        left: '0'
+      }}
+    >dandyleon</div>
   )
 }
 

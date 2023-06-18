@@ -6,7 +6,7 @@ import { useCategoryStore } from "../store/useCategoryStore/useCategoryStore";
 import { useProductStore } from "../store/useProductStore/useProductStore";
 import { useOrderView } from "../store/orderStore/useOrderView";
 import DropDown from "../shared/inputs/dropdown";
-import { GiEmeraldNecklace, GiCrystalEarrings } from "react-icons/gi"
+import { GiEmeraldNecklace, GiCrystalEarrings, GiPoloShirt} from "react-icons/gi"
 import { IoHomeOutline } from "react-icons/io5"
 
 
@@ -59,13 +59,13 @@ const Categories = () => {
     await targetEl.forEach((panel, idx) => {     
       panel.classList.remove("active-category-tab");
     });
-debugger
+
     await e.currentTarget.classList.add("active-category-tab")
   }
 
 
-  const ProductsByCategory = async(categoryID: number | string) => {
-    if (categoryID === "") return
+  const ProductsByCategory = async(categoryID: number | string ) => {    
+    if (categoryID === "0") return
     hideOrder();
     await showLoading()
     await axios({
@@ -74,8 +74,7 @@ debugger
       headers: {},
       data: {},
     })
-      .then(({data}: any) => {
-        // debugger
+      .then(({data}: any) => {        
         hideLoading();      
         loadProduct(data.data)      
       })
@@ -98,14 +97,17 @@ debugger
       <CategoryTabs tabID={1} tabName="Earrings" activeTab="" tabClick={handleTabSelect}>
          <GiCrystalEarrings />
       </CategoryTabs>
-      <CategoryTabs tabID="" tabName="" activeTab="" tabClick={handleTabSelect}>
+      <CategoryTabs tabID={5} tabName="Clothes" activeTab="" tabClick={handleTabSelect}>
+         <GiPoloShirt />
+      </CategoryTabs>
+      <CategoryTabs tabID={0} tabName="" activeTab="" tabClick={handleTabSelect}>
         <DropDown
           dataStore={categoryList.map((item) => ({
             id: item.id,
             value: item.name,
           }))}
           onDropSelect={handleDropSelect}
-          placeholder="Select Category"
+          placeholder="All Categories"
         />
       </CategoryTabs>
     </div>
@@ -125,7 +127,7 @@ interface TabProps {
 
 const CategoryTabs = ({tabID = 0, tabName = "", activeTab = "", tabClick, children = null} : TabProps) => {
   return (
-    <div className={`category-items ${activeTab}`}>
+    <div className={`${tabID === 0 ? "category-all" : "category-items"}  ${activeTab}`}>
       <div className="flex-column" style={{alignItems: "center", fontSize: "2rem"}} data-category_id = {tabID} onClick ={tabClick}>        
         {children}
         { !(tabName === "") && <div style = {{fontSize: "1rem"}}>
