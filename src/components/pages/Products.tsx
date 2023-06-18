@@ -42,9 +42,10 @@ const ShowProducts = ({orderFormState} : OrderFormProps) => {
 
     await hideLoading()
   }
-
+debugger
   return (
-    <div className="flex-row" style={{flexWrap: 'wrap'}}>     
+    <div className="flex-row" style={{flexWrap: 'wrap', marginTop: '2.5rem'}}>  
+    {productList.length === 0 && "No Products Found"}   
     {productList
       .filter((allRecord) =>
         allRecord.name

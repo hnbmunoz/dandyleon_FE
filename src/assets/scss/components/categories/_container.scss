@@ -12,7 +12,7 @@
 }
 
 .category-items {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   color: #808080;
   cursor: pointer;
   // font-weight: bold;
@@ -24,6 +24,21 @@
     font-weight: bolder;
     border-style: solid;
   }
+
+}
+.category-all {
+  padding: 0.5rem 1rem;
+  color: #808080;
+  cursor: pointer;
+  // font-weight: bold;
+  font-size: 2rem;
+  // &:hover {
+  //   color: #000;
+  //   // border: 0;
+  //   // border-bottom:1px;
+  //   font-weight: bolder;
+  //   border-style: solid;
+  // }
 
 }
 

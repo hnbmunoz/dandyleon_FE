@@ -33,19 +33,11 @@ const AdminPanel = () => {
           {defaultPanel === 1 && <CategoryPanel />}
         </PanelSection>
         <PanelSection color="transparent">
-          {defaultPanel === 2 && <ProductPanel />}
-          {/* <DummmyPanel show="Products Panel" /> */}
+          {defaultPanel === 2 && <ProductPanel />}          
         </PanelSection>
         <PanelSection color="transparent">
-          <DummmyPanel show="Administration Panel" />
-          {/* <DummmyPanel show="Transaction Panel" /> */}
-        </PanelSection>
-        {/* <PanelSection color="transparent">
-          <DummmyPanel show="Reports Panel" />
-        </PanelSection>
-        <PanelSection color="transparent">
-          <DummmyPanel show="Clients Panel" />
-        </PanelSection> */}
+          <DummmyPanel show="Administration Panel" />          
+        </PanelSection>     
       </PanelHolder>
     </div>
   );

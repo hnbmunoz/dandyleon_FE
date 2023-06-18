@@ -60,9 +60,10 @@ const ProductPanel = () => {
       <div className="config-body">
         <div className="config-table">
           <div className="table-header">
+            <div className="header-elements col-width1"></div>
             <div className="header-elements col-width1">Name</div>
             <div className="header-elements col-width2">Description</div>            
-            <div className="header-elements col-width2">Price</div>
+            <div className="header-elements col-width1">Price</div>
             <div className="header-elements col-width3">Options</div>
             
           </div>
@@ -76,11 +77,12 @@ const ProductPanel = () => {
               .map((el) => {
                 return (
                   <div className="table-row" >
+                     <img className="table-elements col-width1"src={el.image_url}></img>
                     <div className="table-elements col-width1">{el.name}</div>
                     <div className="table-elements col-width2">
                       {el.description}
                     </div>                
-                    <div className="table-elements col-width2">               
+                    <div className="table-elements col-width1">               
                       {dollarUSLocale.format(el.price)}
                     </div>
                     <div className="table-elements col-width3" >                     

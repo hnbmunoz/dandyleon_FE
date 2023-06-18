@@ -55,7 +55,9 @@ const Order = ({orderFormState} : OrderFormProps) => {
   
 
   return (
-    <div className='order-page'>  
+    // <div className='order-page'>  
+    <div className="order-page flex-row" style={{flexWrap: 'wrap', marginTop: '3.5rem'}}>  
+
       <div className="order-detail flex-row">
         <div className='flex-column'>
           <img src={ordered.image_url}></img>
@@ -111,18 +113,18 @@ const Order = ({orderFormState} : OrderFormProps) => {
            </div>
            <div>
               <label>Price :</label>
-              <label>{purchasePrice}</label>
+              <label>{` ${purchasePrice}`}</label>
            </div>
-           <div>
-            <button onClick={handleAddtoCart}>Add to Cart</button>
+           <div className="order-btn-container">            
+            <button className="addToCart" onClick={handleAddtoCart}>
+              <span className="addToCart_lg">
+                  <span className="addToCart_sl"></span>
+                  <span className="addToCart_text">Add to Cart</span>
+              </span>
+            </button>
            </div>
         </div>
-      </div>    
-      {/* <div onClick={orderFormState} style={{position: "absolute"}}>
-        Back
-       
-      </div> */}
-
+      </div>         
     </div>
   )
 }
