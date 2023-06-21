@@ -6,7 +6,16 @@ import StandardSearch from "../shared/inputs/search/StandardSearch";
 const Header = () => {
   return (
     <div className="header-container">
-      <div style={{ display: 'flex', width: "100%", backgroundColor: "red", position: 'relative', justifyContent:'center' }}>
+      <div
+        style={{
+          display: "flex",
+          width: "100%",
+          backgroundColor: "transparent",
+          position: "relative",
+          // justifyContent: "center",
+          margin: "0 2.5rem"
+        }}
+      >
         <div className="header-logo">
           <Logo />
         </div>

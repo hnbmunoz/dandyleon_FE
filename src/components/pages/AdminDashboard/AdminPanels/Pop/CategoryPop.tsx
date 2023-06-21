@@ -98,6 +98,7 @@ const CategoryPop = ({ id = null }: PopUpProps) => {
   };
 
   const ModifyCategory = async () => {
+    if (!editForm) return
     await showLoading();
     await axios({
       method: "patch",
@@ -170,7 +171,7 @@ const CategoryPop = ({ id = null }: PopUpProps) => {
       </div>
 
       <button
-        className="auth-btn"
+        className= {`auth-btn ${!editForm && "disabled"}`}
         onClick={!id ? CreateNewCategory : ModifyCategory}
       >
         {!id ? "New Category" : "Update Category"}

@@ -49,7 +49,7 @@ const AdminWidget = () => {
       <div className="navigation-items" onClick={() => {setActiveItem(0)}}>Transactions</div>
       <div className="navigation-items" onClick={() => {setActiveItem(1)}}>Category</div>
       <div className="navigation-items" onClick={() => {setActiveItem(2)}}>Products</div>
-      <div className="navigation-items" onClick={() => {setActiveItem(3)}}>Admin Accts</div>
+      {/* <div className="navigation-items" onClick={() => {setActiveItem(3)}}>Admin Accts</div> */}
       {/* <div className="navigation-items" onClick={() => {setActiveItem(4)}}>Reports</div>
       <div className="navigation-items" onClick={() => {setActiveItem(5)}}>Clients</div> */}
       {/* <ToggleButton>
