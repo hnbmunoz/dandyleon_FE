@@ -138,6 +138,7 @@ const ProductPop = ({ id = null }: PopUpProps) => {
   };
 
   const ModifyProduct = async () => {
+    if (!editForm) return
     await showLoading();
     await axios({
       method: "patch",
@@ -325,7 +326,7 @@ const ProductPop = ({ id = null }: PopUpProps) => {
         </div>}
       </div>
       <button
-        className="auth-btn"
+        className= {`auth-btn ${!editForm && "disabled"}`}
         onClick={!id ? CreateProduct : ModifyProduct}
       >
         {!id ? "New Product" : "Update Product"}

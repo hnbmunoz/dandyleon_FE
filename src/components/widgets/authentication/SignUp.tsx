@@ -29,6 +29,13 @@ const SignUp = ({ formSubmit, toggleForm, closeWidget, isRegister = true}: SignU
 
   const handleRegistration = () => {
     formSubmit(fname, mname, lname, email, displayName, userName, password);
+    setFname("")
+    setMname("")
+    setLname("")
+    setDisplayName("")
+    setEmail("")
+    setPassword("")
+
   };
 
   return (
@@ -49,6 +56,7 @@ const SignUp = ({ formSubmit, toggleForm, closeWidget, isRegister = true}: SignU
       <TextInput
         displayText={mname}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
+          if (!isRegister) return
           setMname(e.currentTarget.value);
         }}
         placeHolder="Middle Initial/Name"
@@ -57,6 +65,7 @@ const SignUp = ({ formSubmit, toggleForm, closeWidget, isRegister = true}: SignU
       <TextInput
         displayText={lname}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
+          if (!isRegister) return
           setLname(e.currentTarget.value);
         }}
         placeHolder="Last Name"
@@ -65,6 +74,7 @@ const SignUp = ({ formSubmit, toggleForm, closeWidget, isRegister = true}: SignU
       <TextInput
         displayText={displayName}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
+          if (!isRegister) return
           setDisplayName(e.currentTarget.value);
         }}
         placeHolder="Display Name"
@@ -73,6 +83,7 @@ const SignUp = ({ formSubmit, toggleForm, closeWidget, isRegister = true}: SignU
       <TextInput
         displayText={email}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
+          if (!isRegister) return
           setEmail(e.currentTarget.value);
         }}
         placeHolder="Email Address"
@@ -81,6 +92,7 @@ const SignUp = ({ formSubmit, toggleForm, closeWidget, isRegister = true}: SignU
       <TextInput
         displayText={userName}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
+          if (!isRegister) return
           setUserName(e.currentTarget.value);
         }}
         placeHolder="User Name"
@@ -89,6 +101,7 @@ const SignUp = ({ formSubmit, toggleForm, closeWidget, isRegister = true}: SignU
       <PasswordInput
         displayText={password}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
+          if (!isRegister) return
           setPassword(e.currentTarget.value);
         }}
         placeHolder="Password"

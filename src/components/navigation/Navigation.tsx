@@ -61,7 +61,7 @@ const Navigation = () => {
           Login
         </div>
       ) : (
-        <div className=" auth-login flex-row">
+        <div className="  flex-row" style={{fontSize: "1.5rem"}}>
           <div>{profile.display}</div> |
           <div className="auth-login" onClick={handleSingout}>Log Out</div>
         </div>

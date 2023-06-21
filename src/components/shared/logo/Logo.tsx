@@ -5,7 +5,8 @@ const Logo = () => {
     <div
       style={{
         position: 'absolute',
-        left: '0'
+        left: '0',
+        fontSize: '2rem'
       }}
     >dandyleon</div>
   )

@@ -7,6 +7,7 @@ import { usePopUpStore } from '../../../../store/popupStore/usePopUpStore';
 import { useLoaderStore } from '../../../../store/loaderStore/useLoaderStore';
 import { userProfileStore } from '../../../../store/profileStore/useProfileStore';
 import { toast } from "react-toastify";
+import Moment from 'react-moment';
 import axios from 'axios';
 
 const TransactionPanel = () => {
@@ -104,7 +105,8 @@ const TransactionPanel = () => {
                   <div className="table-row" >
                     <div className="table-elements col-width1">{el.display_name}</div>
                     <div className="table-elements col-width2">
-                      {new Date(el.created_at).toDateString() }
+                      {/* {new Date(el.created_at).toDateString() } */}
+                      <Moment format="D MMM, YYYY">{el.created_at}</Moment>
                     </div>                
                     <div className="table-elements col-width2">               
                       {el.delivered === "pending" ? 

@@ -7,10 +7,15 @@ const StandardSearch = () => {
   const {setFilter, updateFilter, clearFilter} = useFilterStore();
 
   return (
-    <div className="search-container flex-row" style={{width: "200%"}}>
+    <div className="search-container flex-row"
+      style={{
+        width: "200%",
+        left: "150%",
+        position: "relative"
+      }}
+    >
       {setFilter == "" && <SearchButton />}
       <input
-        // className="default-input"
         style={{width: "100%"}}
         placeholder="Search..."
         value={setFilter}

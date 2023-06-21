@@ -143,7 +143,18 @@ const App = () => {
       { !_.isEmpty(profile) && userProfile.is_admin && <AdminButton buttonClick={handleDisplayPage}/>  }         
       {displayAuthentication && <AuthenticationModal />}
       {loading && <Loaders />}
+      <div 
+        style={{
+          width: '100%',          
+          height: '100vh',
+          display: 'flex',
+          justifyContent:'center',
+          position: 'absolute',
+          zIndex: `${toBlur ? "10" : "-1"}`
+        }}
+      >
       {displayPopUp && <PopUp closeWidget={handleClosePopUp}/>}
+      </div>
       {toAdmin ? <AdminDashboard /> : <Sales />} 
       
     </div>

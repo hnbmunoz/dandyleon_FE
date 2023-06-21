@@ -6,7 +6,7 @@ import { useCategoryStore } from "../store/useCategoryStore/useCategoryStore";
 import { useProductStore } from "../store/useProductStore/useProductStore";
 import { useOrderView } from "../store/orderStore/useOrderView";
 import DropDown from "../shared/inputs/dropdown";
-import { GiEmeraldNecklace, GiCrystalEarrings, GiPoloShirt} from "react-icons/gi"
+import { GiEmeraldNecklace, GiCrystalEarrings, GiPoloShirt, GiWatch} from "react-icons/gi"
 import { IoHomeOutline } from "react-icons/io5"
 
 
@@ -54,13 +54,14 @@ const Categories = () => {
 
   const handleTabSelect = async(e : any) => {    
     ProductsByCategory(e.currentTarget.dataset.category_id)
-
+    let activeEl = e.currentTarget
+    
     let targetEl = document.querySelectorAll(".category-items");    
     await targetEl.forEach((panel, idx) => {     
       panel.classList.remove("active-category-tab");
     });
 
-    await e.currentTarget.classList.add("active-category-tab")
+    await activeEl.parentElement.classList.add("active-category-tab")
   }
 
 
@@ -97,8 +98,11 @@ const Categories = () => {
       <CategoryTabs tabID={1} tabName="Earrings" activeTab="" tabClick={handleTabSelect}>
          <GiCrystalEarrings />
       </CategoryTabs>
-      <CategoryTabs tabID={5} tabName="Clothes" activeTab="" tabClick={handleTabSelect}>
+      <CategoryTabs tabID={3} tabName="Clothes" activeTab="" tabClick={handleTabSelect}>
          <GiPoloShirt />
+      </CategoryTabs>
+      <CategoryTabs tabID={4} tabName="Clothes" activeTab="" tabClick={handleTabSelect}>
+         <GiWatch />
       </CategoryTabs>
       <CategoryTabs tabID={0} tabName="" activeTab="" tabClick={handleTabSelect}>
         <DropDown
